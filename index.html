@@ -42,9 +42,9 @@
 
   <nav class="tabs" aria-label="Välj dag" role="tablist">
     <button class="active" id="tab-man" data-day="man" role="tab" aria-selected="true" aria-controls="man"><span>🚆 Mån</span><small>Ankomst</small></button>
-    <button id="tab-tis" data-day="tis" role="tab" aria-selected="false" aria-controls="tis"><span>🏰 Tis</span><small>Imperialt</small></button>
-    <button id="tab-ons" data-day="ons" role="tab" aria-selected="false" aria-controls="ons"><span>🍇 Ons</span><small>Vinbergen</small></button>
-    <button id="tab-tor" data-day="tor" role="tab" aria-selected="false" aria-controls="tor"><span>✈️ Tor</span><small>Hemresa</small></button>
+    <button id="tab-tis" data-day="tis" role="tab" aria-selected="false" aria-controls="tis" tabindex="-1"><span>🏰 Tis</span><small>Imperialt</small></button>
+    <button id="tab-ons" data-day="ons" role="tab" aria-selected="false" aria-controls="ons" tabindex="-1"><span>🍇 Ons</span><small>Vinbergen</small></button>
+    <button id="tab-tor" data-day="tor" role="tab" aria-selected="false" aria-controls="tor" tabindex="-1"><span>✈️ Tor</span><small>Hemresa</small></button>
   </nav>
 
   <section class="day active" id="man" role="tabpanel" aria-labelledby="tab-man">
@@ -70,12 +70,11 @@
 
   <section class="day" id="ons" role="tabpanel" aria-labelledby="tab-ons">
     <div class="day-head"><div class="eyebrow">Onsdag 12 augusti · konst & vin</div><h2>Klimt och en riktig vingård</h2><p>Dagens vinprovning kräver bekräftelse. Skicka förfrågan nu; heurigen är en bra reserv även utan guidad tur.</p></div>
-    <div class="callout"><strong>Viktigast att boka först</strong><p>Fuhrgassl-Hubers formulär visar 12 augusti som valbart, men ingen liveplats för två är bekräftad. Skicka förfrågan om ”Weinverkostung plus” nu och följ upp under kontorstid tisdag 09.00–14.00. Planen nedan gäller först när de svarat ja.</p></div>
+    <div class="callout"><strong>Viktigast att boka först</strong><p>Fuhrgassl-Hubers formulär visar onsdag 12 augusti kl. 11.00 som valbart för två, men formuläret är en förfrågan — inte bekräftad inventering. Vineriet ber normalt om 2–3 veckors framförhållning, så en bokning med kort varsel är osäker. Skicka förfrågan om ”Weinverkostung plus” nu och följ upp under kontorstid tisdag 09.00–14.00. Planen nedan gäller först när de svarat ja.</p></div>
     <div class="schedule">
-      <article class="item"><div class="num">1</div><div><div class="item-top"><span class="time">09.00–11.15</span><span class="tag">Tidsbiljett</span></div><h3>Upper Belvedere</h3><p>Barockpalats, trädgårdsaxel och Klimts <em>Kyssen</em>. Under 15 juli–31 augusti är Upper Belvedere öppet dagligen 09.00–19.00. Besök kräver biljett med tidslucka.</p><div class="links"><a class="primary" href="https://www.belvedere.at/en/tickets" target="_blank" rel="noopener">Boka officiellt</a><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Graben+17%2C+1010+Wien&amp;destination=Upper+Belvedere%2C+Prinz-Eugen-Stra%C3%9Fe+27%2C+Wien&amp;travelmode=transit" target="_blank" rel="noopener">Resväg</a></div></div></article>
-      <article class="item"><div class="num">2</div><div><div class="item-top"><span class="time">11.30–13.00</span><span class="tag">Lugn paus</span></div><h3>Lunch nära centrum</h3><p>Åk tillbaka mot centrum, ät lätt och lämna plats för bröd och sju vinprover senare. Sikta på att lämna centrala Wien minst en timme före bekräftad provning.</p></div></article>
-      <article class="item feature"><div class="num">3</div><div><div class="item-top"><span class="time">Förslag 15.00</span><span class="tag">Måste bekräftas</span></div><h3>Fuhrgassl-Huber · vinprovning plus</h3><p>Ett äkta Wien-vineri mellan vinbergen och Wienerwald. ”Weinverkostung plus” innehåller guidad promenad upp i vingården, historisk vinkällare och sju vinprover i provningsrummet. Cirka 2 timmar, €36 per person; vingårdsdelen sker bara i dagsljus och bra väder.</p><p>Neustift am Walde 68. Officiell resväg är U4/U6 till Spittelau och buss 35A till Neustift am Walde, direkt utanför.</p><div class="facts"><span>7 prover</span><span>vingård + källare</span><span>≈2 tim</span><span>€36/person</span></div><div class="links"><a class="primary" href="https://www.fuhrgassl-huber.at/de/weingut/verkostungen-fuehrungen.html#goto=request-form" target="_blank" rel="noopener">Skicka förfrågan</a><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Graben+17%2C+1010+Wien&amp;destination=Fuhrgassl-Huber%2C+Neustift+am+Walde+68%2C+Wien&amp;travelmode=transit" target="_blank" rel="noopener">Resväg</a></div></div></article>
-      <article class="item"><div class="num">4</div><div><div class="item-top"><span class="time">Efter provningen</span><span class="tag">Heuriger</span></div><h3>Stanna på Buschenschank</h3><p>Deras egen heuriger är öppen onsdag 14.00–23.00. Boka bord samtidigt och gör detta till tidig middag bland vinodlingarna. Om den guidade turen inte går att få: åk ändå ut, promenera i dagsljus och prova gårdens viner glasvis — men kalla det då en egen provning, inte en bokad rundtur.</p><div class="links"><a href="https://www.fuhrgassl-huber.at/de/buschenschank/reservierungen.html#goto=request-form" target="_blank" rel="noopener">Boka bord</a><a href="https://www.wien.info/en/recommendations/wine-walking-on-the-kahlenberg" target="_blank" rel="noopener">Wiens vinpromenader</a></div></div></article>
+      <article class="item feature"><div class="num">1</div><div><div class="item-top"><span class="time">Förfrågan 11.00</span><span class="tag">Måste bekräftas</span></div><h3>Fuhrgassl-Huber · vinprovning plus</h3><p>Ett äkta Wien-vineri mellan vinbergen och Wienerwald. ”Weinverkostung plus” innehåller guidning i de historiska vinkällarna och vinodlingarna samt en sommelierledd provning av sju viner. Cirka 2 timmar och €36 per person, alltså €72 för två; vingårdsdelen sker bara i dagsljus och bra väder.</p><p>Lämna Graben omkring 09.40. Åk U4/U6 till Spittelau och buss 35A till Neustift am Walde, direkt utanför vineriet på Neustift am Walde 68.</p><div class="facts"><span>7 prover</span><span>vingård + källare</span><span>≈2 tim</span><span>€72 för två</span></div><div class="links"><a class="primary" href="https://www.fuhrgassl-huber.at/de/weingut/verkostungen-fuehrungen.html#goto=request-form" target="_blank" rel="noopener">Skicka förfrågan</a><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Graben+17%2C+1010+Wien&amp;destination=Fuhrgassl-Huber%2C+Neustift+am+Walde+68%2C+Wien&amp;travelmode=transit" target="_blank" rel="noopener">Resväg</a></div></div></article>
+      <article class="item"><div class="num">2</div><div><div class="item-top"><span class="time">13.00–15.30</span><span class="tag">Vinby</span></div><h3>Lunch och Neustift am Walde</h3><p>Ta en lugn paus efter provningen. Deras Buschenschank öppnar 14.00–23.00; boka bord samtidigt som provningen och ät en sen lunch eller tidig middag där. Före öppning kan ni promenera i byn eller ta kaffe. Om den guidade turen inte bekräftas: åk ändå ut efter 14.00 och prova gårdens viner glasvis, men kalla det då en egen provning.</p><div class="links"><a href="https://www.fuhrgassl-huber.at/de/buschenschank/reservierungen.html#goto=request-form" target="_blank" rel="noopener">Boka bord</a><a href="https://www.wien.info/en/recommendations/wine-walking-on-the-kahlenberg" target="_blank" rel="noopener">Wiens vinpromenader</a></div></div></article>
+      <article class="item"><div class="num">3</div><div><div class="item-top"><span class="time">17.00–18.45</span><span class="tag">Tidsbiljett</span></div><h3>Upper Belvedere</h3><p>Avsluta med barockpalatset, trädgårdsaxeln och Klimts <em>Kyssen</em>. Under 15 juli–31 augusti är Upper Belvedere öppet dagligen 09.00–19.00. Boka tidslucka omkring 17.00 och lämna Neustift senast cirka 15.40.</p><div class="links"><a class="primary" href="https://www.belvedere.at/en/tickets" target="_blank" rel="noopener">Boka officiellt</a><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Fuhrgassl-Huber%2C+Neustift+am+Walde+68%2C+Wien&amp;destination=Upper+Belvedere%2C+Prinz-Eugen-Stra%C3%9Fe+27%2C+Wien&amp;travelmode=transit" target="_blank" rel="noopener">Resväg</a></div></div></article>
     </div>
   </section>
 
@@ -92,10 +91,10 @@
   <section class="section" aria-labelledby="book-title">
     <div class="section-head"><div><div class="eyebrow">Gör före avresa</div><h2 id="book-title">Bokningsordning</h2></div><p>Liveinventering har inte kontrollerats. Öppna de officiella flödena nu.</p></div>
     <div class="practical-grid">
-      <article class="card"><span class="icon">🍇</span><h3>1. Fuhrgassl-Huber</h3><p>Skicka onsdagsförfrågan om ”Weinverkostung plus” för två och be samtidigt om bord efteråt. Följ upp tisdag under kontorstid.</p><div class="links"><a class="primary" href="https://www.fuhrgassl-huber.at/de/weingut/verkostungen-fuehrungen.html#goto=request-form" target="_blank" rel="noopener">Förfrågan</a></div></article>
+      <article class="card"><span class="icon">🍇</span><h3>1. Fuhrgassl-Huber</h3><p>Skicka onsdagsförfrågan om ”Weinverkostung plus” för två kl. 11.00 och be samtidigt om bord från 14.00. Följ upp tisdag under kontorstid.</p><div class="links"><a class="primary" href="https://www.fuhrgassl-huber.at/de/weingut/verkostungen-fuehrungen.html#goto=request-form" target="_blank" rel="noopener">Förfrågan</a></div></article>
       <article class="card"><span class="icon">🏰</span><h3>2. Schönbrunn</h3><p>Välj tid nära 08.30 på tisdag. Officiella sidan varnar för slutsålda korttidsbesök.</p><div class="links"><a href="https://www.schoenbrunn.at/en/tickets-and-prices/all-tickets-tours" target="_blank" rel="noopener">Biljetter</a></div></article>
       <article class="card"><span class="icon">👑</span><h3>3. Sisi Museum</h3><p>Välj tisdag omkring 15.00 och håll sista insläpp 16.30 i minnet.</p><div class="links"><a href="https://www.sisimuseum-hofburg.at/en/tickets/tickets-prices" target="_blank" rel="noopener">Biljetter</a></div></article>
-      <article class="card"><span class="icon">🖼️</span><h3>4. Upper Belvedere</h3><p>Välj onsdag 09.00. Tidslucka krävs, men besökets längd är inte begränsad.</p><div class="links"><a href="https://www.belvedere.at/en/tickets" target="_blank" rel="noopener">Biljetter</a></div></article>
+      <article class="card"><span class="icon">🖼️</span><h3>4. Upper Belvedere</h3><p>Välj onsdag omkring 17.00 efter vinbesöket. Tidslucka krävs, men besökets längd är inte begränsad.</p><div class="links"><a href="https://www.belvedere.at/en/tickets" target="_blank" rel="noopener">Biljetter</a></div></article>
       <article class="card wide"><span class="icon">🍷</span><h3>Matbokningar</h3><p>Boka Heunisch & Erben måndag 20.30 och Regina Margherita tisdag 13.30. Ingen liveplats har kontrollerats; deras egna kontakt- och bokningsvägar finns i dagsplanen.</p></article>
     </div>
   </section>
@@ -125,18 +124,31 @@
     <p class="fine">Tiderna på sidan är en praktisk plan, inte bokningsbekräftelser. Pris för Fuhrgassl-Huber och CAT kommer från respektive officiell sida vid kontrollen. Restaurang- och museiinventering har inte testats i bokningsflödena.</p>
   </section>
 
-  <p class="footer">Wienguiden · 10–13 augusti 2026 · byggd för mobilen</p>
+  <p class="footer">Wienguiden · 10–13 augusti 2026 · byggd för mobilen · <a href="https://github.com/ponbac/wien-guide/blob/main/PHOTO_CREDITS.md" target="_blank" rel="noopener">foto- och licensinformation</a></p>
 </main>
 <script>
   const buttons=[...document.querySelectorAll('[data-day]')];
   const days=[...document.querySelectorAll('.day')];
   function showDay(id,scroll=false){
-    buttons.forEach(button=>{const active=button.dataset.day===id;button.classList.toggle('active',active);button.setAttribute('aria-selected',active)});
+    buttons.forEach(button=>{const active=button.dataset.day===id;button.classList.toggle('active',active);button.setAttribute('aria-selected',active);button.tabIndex=active?0:-1});
     days.forEach(day=>day.classList.toggle('active',day.id===id));
     history.replaceState(null,'','#'+id);
     if(scroll) document.querySelector('.tabs').scrollIntoView({behavior:'smooth',block:'start'});
   }
-  buttons.forEach(button=>button.addEventListener('click',()=>showDay(button.dataset.day,true)));
+  buttons.forEach((button,index)=>{
+    button.addEventListener('click',()=>showDay(button.dataset.day,true));
+    button.addEventListener('keydown',event=>{
+      let next=index;
+      if(event.key==='ArrowRight') next=(index+1)%buttons.length;
+      else if(event.key==='ArrowLeft') next=(index-1+buttons.length)%buttons.length;
+      else if(event.key==='Home') next=0;
+      else if(event.key==='End') next=buttons.length-1;
+      else return;
+      event.preventDefault();
+      showDay(buttons[next].dataset.day);
+      buttons[next].focus();
+    });
+  });
   const requested=location.hash.slice(1);
   if(days.some(day=>day.id===requested)) showDay(requested);
 </script>
