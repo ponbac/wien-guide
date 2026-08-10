@@ -44,6 +44,7 @@
     <button class="active" id="view-schema-tab" data-view="schema" role="tab" aria-selected="true" aria-controls="schema"><span>🗓️ Schema</span><small>Dag för dag</small></button>
     <button id="view-vin-tab" data-view="vin" role="tab" aria-selected="false" aria-controls="vin" tabindex="-1"><span>🍷 Vinval</span><small>Jämför provningar</small></button>
     <button id="view-restauranger-tab" data-view="restauranger" role="tab" aria-selected="false" aria-controls="restauranger" tabindex="-1"><span>🍽️ Restauranger</span><small>Bra med kort varsel</small></button>
+    <button id="view-vinbutiker-tab" data-view="vinbutiker" role="tab" aria-selected="false" aria-controls="vinbutiker" tabindex="-1"><span>🛍️ Vinbutiker</span><small>Flaskor att ta hem</small></button>
   </nav>
 
   <section class="view-panel active" id="schema" role="tabpanel" aria-labelledby="view-schema-tab" tabindex="0">
@@ -71,7 +72,7 @@
       <article class="item"><div class="num">2</div><div><div class="item-top"><span class="time">13.00–13.20</span><span class="tag">Kort interiör</span></div><h3>Stefansdomen inifrån</h3><p>Den ordinarie eftermiddagsvisningen börjar 13.00. Gör ett kort interiörbesök på vägen till lunch; torn, katakomber eller guidad tur kräver mer tid och får bli valfria.</p><div class="links"><a href="https://stephanskirche.at/visit.php" target="_blank" rel="noopener">Besök & tider</a></div></div></article>
       <article class="item"><div class="num">3</div><div><div class="item-top"><span class="time">13.30</span><span class="tag">Pizzalunch</span></div><h3>Regina Margherita</h3><p>En central napolitansk pizzeria i Palais Esterházy med vedeldad ugn, bara ett kvarter från Graben. Den aktuella menyn har flera tydliga vegetariska pizzor och fisk/skaldjur, exempelvis klassisk Margherita, Ortolana och pizza med tonfisk; öppet dagligen 11.30–23.30.</p><p>Wallnerstraße 4. Boka ett lunchbord online, särskilt om ni vill sitta ute.</p><div class="links"><a class="primary" href="https://www.barbaro.at/reginamargherita" target="_blank" rel="noopener">Meny & bokning</a><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Graben+17%2C+1010+Wien&amp;destination=Regina+Margherita%2C+Wallnerstra%C3%9Fe+4%2C+Wien&amp;travelmode=walking" target="_blank" rel="noopener">Från hotellet</a></div></div></article>
       <article class="item"><div class="num">4</div><div><div class="item-top"><span class="time">15.00–17.00</span><span class="tag">Boka tid</span></div><h3>Sisi Museum & kejserliga våningarna</h3><p>Gå från pizzerian till Hofburg och se den kejserliga insidan ni passerade dagen före. Museet är öppet dagligen 09.00–17.30, sista insläpp 16.30; hög belastning gör förköp klokt.</p><div class="links"><a class="primary" href="https://www.sisimuseum-hofburg.at/en/tickets/tickets-prices" target="_blank" rel="noopener">Biljetter</a><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Regina+Margherita%2C+Wallnerstra%C3%9Fe+4%2C+Wien&amp;destination=Sisi+Museum%2C+Vienna&amp;travelmode=walking" target="_blank" rel="noopener">Gångväg</a></div></div></article>
-      <article class="item"><div class="num">5</div><div><div class="item-top"><span class="time">17.15–18.30</span><span class="tag">Välj efter ork</span></div><h3>Statsoperan, Albertina & Karlskirche</h3><p>Avsluta med byggnaderna kring Opernring och Karlsplatz. Det fungerar fint som promenad utifrån; om ni hellre vill ha konst är Albertina öppen till 18.00 och till 21.00 på onsdagar.</p><div class="links"><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Sisi+Museum%2C+Vienna&amp;destination=Karlskirche%2C+Vienna&amp;waypoints=Albertina%2C+Vienna%7CVienna+State+Opera&amp;travelmode=walking" target="_blank" rel="noopener">Promenadrutt</a><a href="https://www.albertina.at/en/visit/opening-hours/" target="_blank" rel="noopener">Albertina</a></div></div></article>
+      <article class="item"><div class="num">5</div><div><div class="item-top"><span class="time">17.15–18.30</span><span class="tag">Välj efter ork</span></div><h3>Statsoperan, Albertina & Karlskirche</h3><p>Avsluta med byggnaderna kring Opernring och Karlsplatz. Det fungerar fint som promenad utifrån; om ni hellre vill ha konst är Albertina öppen till 18.00 och till 21.00 på onsdagar. Om vininköpet är viktigare: hoppa över promenaden, gå till Vinothek St. Stephan och var där senast omkring 17.45 före stängning 18.30.</p><div class="links"><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Sisi+Museum%2C+Vienna&amp;destination=Karlskirche%2C+Vienna&amp;waypoints=Albertina%2C+Vienna%7CVienna+State+Opera&amp;travelmode=walking" target="_blank" rel="noopener">Promenadrutt</a><a href="https://www.albertina.at/en/visit/opening-hours/" target="_blank" rel="noopener">Albertina</a><a class="primary" href="#vinbutiker" data-open-view="vinbutiker">Vinbutiker</a></div></div></article>
     </div>
   </section>
 
@@ -124,6 +125,34 @@
     </div>
   </section>
 
+  <section class="view-panel" id="vinbutiker" role="tabpanel" aria-labelledby="view-vinbutiker-tab" tabindex="0">
+    <div class="day-head"><div class="eyebrow">Vinbutiker · från Graben 17</div><h2>Ta hem en liten Österrikeprovning</h2><p>Fem verifierade butiker inom ungefär tio minuters promenad. Avstånd och gångtid kommer från en livekontrollerad gångrutt den 10 augusti 2026; öppna alltid kartlänken för aktuell väg.</p></div>
+    <div class="callout"><strong>Om ni bara går till en butik</strong><p>Välj Vinothek St. Stephan för ett lugnt, kunnigt köp nära hotellet. Den enklaste luckan är tisdag efter Sisi Museum: gå tillbaka mot centrum och var i butiken senast omkring 17.45, före stängning 18.30. Be personalen bygga en fyrflaskors låda: ett vin från Wien, ett strukturerat vitt från Kamptal/Kremstal, ett ovanligt druvval och en Blaufränkisch från Burgenland. Wine In Time är smidigast om ni hellre vill söka lager online och hämta en färdig order.</p></div>
+    <div class="schedule">
+      <article class="item feature"><div class="num">1</div><div><div class="item-top"><span class="time">≈500 m · 6 min till fots</span><span class="tag">Förstaval</span></div><h3>Vinothek St. Stephan</h3><p>Den mest träffsäkra specialistbutiken för uppgiften: grundad 1976, personlig rådgivning och en officiell prislista uppdaterad i augusti 2026 med ett stort österrikiskt urval. Butiken ligger vid Stephansplatz 6 och är öppen måndag–fredag 10.00–18.30.</p><p>I den aktuella katalogen finns exempelvis Bründlmayer Riesling Steinmassl 2024 (€24,80), Angerer Grüner Veltliner Unfiltriert 2022 (€36,80), Mantlerhof Roter Veltliner 2024 (€27,80) och Moric Blaufränkisch Reserve 2023 (€44,80). Se dem som samtalsstartare — lagersaldo och pris kan ändras.</p><div class="facts"><span>österrikiskt djup</span><span>aktuellt 2026-sortiment</span><span>personlig rådgivning</span><span>mån–ons öppet</span></div><div class="links"><a class="primary" href="https://www.ststephan.at/catalog.php" target="_blank" rel="noopener">Se aktuell katalog</a><a href="https://www.ststephan.at/about.php" target="_blank" rel="noopener">Adress & tider</a><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Graben+17%2C+1010+Wien&amp;destination=Vinothek+St.+Stephan%2C+Stephansplatz+6%2C+1010+Wien&amp;travelmode=walking" target="_blank" rel="noopener">Gångväg</a></div></div></article>
+      <article class="item"><div class="num">2</div><div><div class="item-top"><span class="time">≈560 m · 7 min till fots</span><span class="tag">Sök & hämta</span></div><h3>Wine In Time</h3><p>Över 1 000 viner och spritprodukter, med filtrering för bland annat Wien, Wachau, Carnuntum, Burgenland, Steiermark och Thermenregion. Den officiella sidan lyfter särskilt fram rariteter, personliga råd och Click &amp; Collect på Wipplingerstraße 12.</p><p>Beställ online före promenaden: sidan säger att order normalt är klar för hämtning inom fem minuter. Officiella hämtningstider är måndag–fredag 12.00–22.00 och lördag 18.00–22.00, med betalning online eller på plats. Under er resa fungerar alltså måndag–onsdag 12.00–22.00, men invänta orderbekräftelsen innan ni går.</p><div class="facts"><span>1 000+ produkter</span><span>österrikiska regionfilter</span><span>rariteter</span><span>beställ först</span></div><div class="links"><a class="primary" href="https://www.wineintime.at/en/shop/" target="_blank" rel="noopener">Sök lager & beställ</a><a href="https://www.wineintime.at/en/zahlung-versand/" target="_blank" rel="noopener">Hämtning & frakt</a><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Graben+17%2C+1010+Wien&amp;destination=Wine+In+Time%2C+Wipplingerstra%C3%9Fe+12%2C+1010+Wien&amp;travelmode=walking" target="_blank" rel="noopener">Gångväg</a></div></div></article>
+      <article class="item"><div class="num">3</div><div><div class="item-top"><span class="time">≈670 m · 8 min till fots</span><span class="tag">Karaktär & årgång</span></div><h3>Pub Klemo Wineshop · Köllnerhofgasse</h3><p>En separat vinbutik på Köllnerhofgasse 2 från en handlare som arbetar med allt från Grüner Veltliner och skalmacererade viner till gamla och sällsynta flaskor. Det gör den särskilt intressant om ni vill fråga efter mogen österrikisk Blaufränkisch, äldre årgångar eller något mer experimentellt.</p><p>Öppet måndag–fredag 12.00–19.00 och lördag 11.00–17.00. Den exakta butikslistan ligger inte online, så be personalen visa vad som faktiskt finns inne — blanda inte ihop denna butik med Pub Klemos vinbar på Margaretenstraße.</p><div class="facts"><span>mogen stil</span><span>ovanliga flaskor</span><span>fristående shop</span><span>mån–ons 12–19</span></div><div class="links"><a class="primary" href="https://www.pubklemo.com/" target="_blank" rel="noopener">Officiell sida & tider</a><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Graben+17%2C+1010+Wien&amp;destination=Pub+Klemo+Wineshop%2C+K%C3%B6llnerhofgasse+2%2C+1010+Wien&amp;travelmode=walking" target="_blank" rel="noopener">Gångväg</a></div></div></article>
+      <article class="item"><div class="num">4</div><div><div class="item-top"><span class="time">≈650 m · 8 min till fots</span><span class="tag">Öppet sent</span></div><h3>Unger und Klein · Weinhandlung &amp; Bar</h3><p>Bra kvällsval när sightseeingdagen är slut. Den officiella sidan beskriver en vinhandel och bar med österrikiska favoritproducenter, några naturviner och möjlighet att fråga efter en specifik raritet. Prova ett glas och be sedan om en flaska i samma stil att ta hem.</p><p>Gölsdorfgasse 2. Öppet måndag–lördag 16.00–24.00; stängt söndag och helgdag. Sortimentet publiceras inte som komplett lagerlista, så detta är främst ett rådgivnings- och upptäcktsstopp.</p><div class="facts"><span>shop + bar</span><span>österrikiska favoriter</span><span>naturvin</span><span>till midnatt</span></div><div class="links"><a class="primary" href="https://ungerundklein.wine/contact/" target="_blank" rel="noopener">Kontakt & tider</a><a href="https://ungerundklein.wine/category/weinbar-goelsdorfgasse/" target="_blank" rel="noopener">Vinprofil</a><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Graben+17%2C+1010+Wien&amp;destination=Unger+und+Klein%2C+G%C3%B6lsdorfgasse+2%2C+1010+Wien&amp;travelmode=walking" target="_blank" rel="noopener">Gångväg</a></div></div></article>
+      <article class="item"><div class="num">5</div><div><div class="item-top"><span class="time">≈820 m · 10 min till fots</span><span class="tag">Brett reservval</span></div><h3>WEIN &amp; CO Schottentor</h3><p>Större och mer kommersiellt än specialistvalen ovan, men mycket praktiskt: över 1 500 flaskviner, kunnig rådgivning, två kylda raritetshyllor och en kostnadsfri provningszon med månadsvis växlande viner. Bra om ni vill jämföra många prislägen på ett ställe.</p><p>Universitätsring 12. Öppet måndag–torsdag 09.30–24.00, fredag–lördag 09.30–01.00 och söndag 11.00–22.00. Butik och vinbar delar adress; fråga uttryckligen efter österrikiska flaskor för hemtransport.</p><div class="facts"><span>1 500+ flaskviner</span><span>gratis provningszon</span><span>raritetshyllor</span><span>mycket långa tider</span></div><div class="links"><a class="primary" href="https://www.weinco.at/filiale/wien-schottentor-9301" target="_blank" rel="noopener">Sortiment, service & tider</a><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Graben+17%2C+1010+Wien&amp;destination=WEIN+%26+CO+Schottentor%2C+Universit%C3%A4tsring+12%2C+1010+Wien&amp;travelmode=walking" target="_blank" rel="noopener">Gångväg</a></div></div></article>
+    </div>
+
+    <div class="callout"><strong>Vad som faktiskt är dokumenterat</strong><p>Personlig rådgivning anges av Vinothek St. Stephan, Wine In Time och WEIN &amp; CO. Endast WEIN &amp; CO:s kostnadsfria provningszon är verifierad som butikstjänst; Unger und Klein är en bar och vinhandel, men ingen formell provning utlovas. St. Stephans katalog visar priser per flaska och Wine In Time erbjuder Click &amp; Collect samt frakt. Engelskspråkig rådgivning och tax free är inte bekräftade hos någon av butikerna — fråga på plats och räkna inte med dem.</p></div>
+
+    <section class="shop-notes" aria-labelledby="buy-wine-title">
+      <div class="section-head"><div><div class="eyebrow">Fyra flaskor med tydlig Österrikekänsla</div><h2 id="buy-wine-title">Be personalen bygga den här mixen</h2></div></div>
+      <div class="practical-grid">
+        <article class="card"><span class="icon">🏙️</span><h3>1. Wien</h3><p><strong>Wiener Gemischter Satz DAC</strong> — flera druvsorter från samma vingård, skördade och vinifierade tillsammans. Det mest lokala valet.</p></article>
+        <article class="card"><span class="icon">⛰️</span><h3>2. Lägesvitt</h3><p>Grüner Veltliner eller Riesling från Kamptal, Kremstal eller Wachau, gärna vingårdsangivet/”Ried” för mer struktur och lagringspotential.</p></article>
+        <article class="card"><span class="icon">🧭</span><h3>3. Ovanlig druva</h3><p>Be om Roter Veltliner, Rotgipfler eller Zierfandler. Det ger en flaska som är svårare att hitta hemma än ännu en internationell druva.</p></article>
+        <article class="card"><span class="icon">🔴</span><h3>4. Blaufränkisch</h3><p>Välj en sval, pepprig Blaufränkisch från Burgenland — gärna Mittelburgenland, Leithaberg eller Eisenberg — som röd motpol.</p></article>
+      </div>
+    </section>
+
+    <div class="callout"><strong>Hemresan: en 75 cl-flaska får tas genom säkerhetskontrollen i Wien</strong><p>Vienna Airport höjde vätskegränsen den 3 juli 2026: behållare upp till 2 000 ml är tillåtna i handbagaget. En vanlig vinflaska ryms alltså inom säkerhetsregeln på direktflyget från Wien. Austrian anger däremot bara ett personligt föremål i Economy Basic; övriga Economy-priser på kort-/medeldistans får normalt en kabinväska på högst 8 kg och 55 × 40 × 23 cm. Kontrollera just er biljett — flera flaskor äter snabbt upp vikten. Packa varje flaska i vadderat, förslutet flaskskydd; incheckad väska är fortfarande det tryggare valet vid flera flaskor om den ingår.</p><p>Tullverket tillåter alkohol från ett annat EU-land utan avgifter när ni är minst 20 år, transporterar den själva och den är för privat bruk. Behåll kvittona. Wine In Time listar dessutom frakt till Sverige på 3–5 arbetsdagar och €28–34 beroende på vikt, men be säljaren bekräfta slutpris, svensk alkoholskatt och importhantering innan ni räknar med det alternativet.</p><div class="links"><a class="primary" href="https://www.viennaairport.com/en/passengers/airport/security_control" target="_blank" rel="noopener">Vätskor upp till 2 000 ml</a><a href="https://www.austrian.com/at/en/handgepaeck" target="_blank" rel="noopener">Kontrollera handbagaget</a><a href="https://www.wineintime.at/en/zahlung-versand/" target="_blank" rel="noopener">Frakt till Sverige</a><a href="https://www.tullverket.se/en/startpage/private/travelling/bringinggoodswhentravelling/buyingalcoholwhentravelling.4.311bf4f016e69d6ea0d5e0.html" target="_blank" rel="noopener">Tullverket</a></div></div>
+
+    <div class="callout"><strong>Två tips i bilden faller bort för just era datum</strong><p><strong>Eulennest</strong> uppger officiellt semesterstängt 1–30 augusti 2026. För <strong>Weinquelle / tidigare Rafael’s Vinothek</strong> hittades ingen aktuell officiell webbplats eller verifierbara öppettider; därför är den inte ett planeringssäkert val. Vinothek St. Stephan, Wine In Time och WEIN &amp; CO från bilden är däremot verifierade ovan.</p></div>
+  </section>
+
   <section class="section" aria-labelledby="book-title">
     <div class="section-head"><div><div class="eyebrow">Gör före avresa</div><h2 id="book-title">Bokningsordning</h2></div><p>Restaurangernas kortvarselvägar kontrollerades 10 augusti. Inventeringen kan ändras snabbt.</p></div>
     <div class="practical-grid">
@@ -156,6 +185,12 @@
       <a href="https://weingut-mayer-am.pfarrplatz.at/de/weinverkostung-am-weingut-buchen/" target="_blank" rel="noopener">Mayer am Pfarrplatz</a>
       <a href="https://www.winetastingvienna.com/" target="_blank" rel="noopener">Wine Tasting Vienna</a>
       <a href="https://www.heunisch.at/" target="_blank" rel="noopener">Heunisch & Erben</a>
+      <a href="https://www.ststephan.at/catalog.php" target="_blank" rel="noopener">Vinothek St. Stephan</a>
+      <a href="https://www.wineintime.at/en/" target="_blank" rel="noopener">Wine In Time</a>
+      <a href="https://www.pubklemo.com/" target="_blank" rel="noopener">Pub Klemo Wineshop</a>
+      <a href="https://ungerundklein.wine/contact/" target="_blank" rel="noopener">Unger und Klein</a>
+      <a href="https://www.weinco.at/filiale/wien-schottentor-9301" target="_blank" rel="noopener">WEIN &amp; CO Schottentor</a>
+      <a href="https://www.austrianwine.com/our-wine/winegrowing-regions/wien-vienna" target="_blank" rel="noopener">Austrian Wine</a>
       <a href="https://www.barbaro.at/reginamargherita" target="_blank" rel="noopener">Regina Margherita</a>
       <a href="https://www.cafe-englaender.com/postgasse/essen-trinken/" target="_blank" rel="noopener">Café Engländer</a>
       <a href="https://ulrichwien.at/" target="_blank" rel="noopener">Ulrich</a>
@@ -168,7 +203,7 @@
       <a href="https://www.viennaairport.com/en/passengers/airport/check-in" target="_blank" rel="noopener">Vienna Airport</a>
       <a href="https://www.cityairporttrain.com/en/Info-Service/Timetable" target="_blank" rel="noopener">CAT</a>
     </div>
-    <p class="fine">Tiderna på sidan är en praktisk plan, inte bokningsbekräftelser. Pris för Fuhrgassl-Huber och CAT kommer från respektive officiell sida vid kontrollen. Kortvarselpolicyer och vissa restaurangtider kontrollerades 10 augusti på officiella sidor; ett synligt alternativ är inte ett bekräftat bord förrän restaurangen har accepterat bokningen.</p>
+    <p class="fine">Tiderna på sidan är en praktisk plan, inte bokningsbekräftelser. Pris för Fuhrgassl-Huber och CAT kommer från respektive officiell sida vid kontrollen. Vinbutikernas gångavstånd bygger på en liveberäknad OpenStreetMap/Valhalla-rutt från Graben 17 den 10 augusti 2026 och är avrundade; följ kartlänken för aktuell väg. Kortvarselpolicyer och vissa restaurangtider kontrollerades 10 augusti på officiella sidor; ett synligt alternativ är inte ett bekräftat bord förrän restaurangen har accepterat bokningen.</p>
   </section>
 
   <p class="footer">Wienguiden · 10–13 augusti 2026 · byggd för mobilen · <a href="https://github.com/ponbac/wien-guide/blob/main/PHOTO_CREDITS.md" target="_blank" rel="noopener">foto- och licensinformation</a></p>
@@ -193,7 +228,8 @@
     views.forEach(view=>view.classList.toggle('active',view.id===id));
     if(updateHash){
       const activeDay=dayButtons.find(button=>button.getAttribute('aria-selected')==='true')?.dataset.day||'man';
-      history.replaceState(null,'','#'+(id==='schema'?activeDay:id));
+      const nextHash='#'+(id==='schema'?activeDay:id);
+      if(location.hash!==nextHash) history.pushState(null,'',nextHash);
     }
     if(scroll) document.querySelector('.section-tabs').scrollIntoView({behavior:'smooth',block:'start'});
   }
@@ -202,7 +238,8 @@
     showView('schema',false,false);
     selectButtons(dayButtons,'day',id);
     days.forEach(day=>day.classList.toggle('active',day.id===id));
-    history.replaceState(null,'','#'+id);
+    const nextHash='#'+id;
+    if(location.hash!==nextHash) history.pushState(null,'',nextHash);
     if(scroll) document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});
   }
 
@@ -232,12 +269,24 @@
     document.querySelector(`[data-view="${link.dataset.openView}"]`).focus();
   }));
 
+  function alignViewNav(){
+    const tabs=document.querySelector('.section-tabs');
+    window.scrollTo({top:tabs.offsetTop,behavior:'instant'});
+  }
+
   function routeHash(){
     const requested=location.hash.slice(1);
     if(days.some(day=>day.id===requested)) showDay(requested,false);
-    else if(views.some(view=>view.id===requested)) showView(requested,false,false);
+    else if(views.some(view=>view.id===requested)){
+      showView(requested,false,false);
+      setTimeout(alignViewNav,100);
+    }
   }
   window.addEventListener('hashchange',routeHash);
+  window.addEventListener('popstate',routeHash);
+  window.addEventListener('load',()=>{
+    if(views.some(view=>view.id===location.hash.slice(1))) alignViewNav();
+  });
   routeHash();
 </script>
 </body>
