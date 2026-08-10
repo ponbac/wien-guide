@@ -40,13 +40,18 @@
     </figure>
   </section>
 
-  <nav class="tabs" aria-label="Välj dag" role="tablist">
-    <button class="active" id="tab-man" data-day="man" role="tab" aria-selected="true" aria-controls="man"><span>🚆 Mån</span><small>Ankomst</small></button>
-    <button id="tab-tis" data-day="tis" role="tab" aria-selected="false" aria-controls="tis" tabindex="-1"><span>🏰 Tis</span><small>Imperialt</small></button>
-    <button id="tab-ons" data-day="ons" role="tab" aria-selected="false" aria-controls="ons" tabindex="-1"><span>🍇 Ons</span><small>Vinbergen</small></button>
-    <button id="tab-vin" data-day="vin" role="tab" aria-selected="false" aria-controls="vin" tabindex="-1"><span>🍷 Vinval</span><small>Jämför</small></button>
-    <button id="tab-tor" data-day="tor" role="tab" aria-selected="false" aria-controls="tor" tabindex="-1"><span>✈️ Tor</span><small>Hemresa</small></button>
+  <nav class="section-tabs" aria-label="Välj innehåll" role="tablist">
+    <button class="active" id="view-schema-tab" data-view="schema" role="tab" aria-selected="true" aria-controls="schema"><span>🗓️ Schema</span><small>Dag för dag</small></button>
+    <button id="view-vin-tab" data-view="vin" role="tab" aria-selected="false" aria-controls="vin" tabindex="-1"><span>🍷 Vinval</span><small>Jämför provningar</small></button>
   </nav>
+
+  <section class="view-panel active" id="schema" role="tabpanel" aria-labelledby="view-schema-tab">
+    <nav class="tabs" aria-label="Välj dag" role="tablist">
+      <button class="active" id="tab-man" data-day="man" role="tab" aria-selected="true" aria-controls="man"><span>🚆 Mån</span><small>Ankomst</small></button>
+      <button id="tab-tis" data-day="tis" role="tab" aria-selected="false" aria-controls="tis" tabindex="-1"><span>🏰 Tis</span><small>Imperialt</small></button>
+      <button id="tab-ons" data-day="ons" role="tab" aria-selected="false" aria-controls="ons" tabindex="-1"><span>🍇 Ons</span><small>Vinbergen</small></button>
+      <button id="tab-tor" data-day="tor" role="tab" aria-selected="false" aria-controls="tor" tabindex="-1"><span>✈️ Tor</span><small>Hemresa</small></button>
+    </nav>
 
   <section class="day active" id="man" role="tabpanel" aria-labelledby="tab-man">
     <div class="day-head"><div class="eyebrow">Måndag 10 augusti · sen ankomst</div><h2>Gamla stan & vinbar</h2><p>Det senare tåget ger en kort men fin första kväll: incheckning, de upplysta centrumfasaderna och vin med ost.</p></div>
@@ -79,7 +84,19 @@
     </div>
   </section>
 
-  <section class="day" id="vin" role="tabpanel" aria-labelledby="tab-vin">
+  <section class="day" id="tor" role="tabpanel" aria-labelledby="tab-tor">
+    <div class="day-head"><div class="eyebrow">Torsdag 13 augusti · avresa</div><h2>Graben → VIE → Stockholm</h2><p>Flyget OS965 avgår 12.15. Den konservativa planen nedan ger drygt tre timmar på flygplatsen och fungerar även med incheckat bagage.</p></div>
+    <div class="schedule">
+      <article class="item"><div class="num">1</div><div><div class="item-top"><span class="time">07.15–08.05</span><span class="tag">Lugnt</span></div><h3>Frukost och utcheckning</h3><p>Checka in online hos Austrian när det öppnar och ha boardingkort samt ID lättåtkomliga. Med incheckat bagage: lämna hotellet omkring 08.05. Med enbart handbagage kan ni välja den senare CAT-avgången 09.37.</p></div></article>
+      <article class="item feature"><div class="num">2</div><div><div class="item-top"><span class="time">08.05–08.53</span><span class="tag">Primär plan</span></div><h3>Gå till Wien Mitte · CAT 08.37</h3><p>Gå från Graben 17 till City Air Terminal i Wien Mitte med promenadmarginal. CAT avgår 08.37 och går nonstop på 16 minuter, med planerad ankomst 08.53. En enkelbiljett kostar €14,90 enligt flygplatsen.</p><p>Austrian-resenärer kan normalt använda City Check-in; bagage måste vara inlämnat senast 75 minuter före avgång. För maximal enkelhet går det också bra att ta väskorna på tåget och lämna dem på flygplatsen.</p><div class="links"><a class="primary" href="https://www.cityairporttrain.com/en/Info-Service/Timetable" target="_blank" rel="noopener">CAT tidtabell</a><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Graben+17%2C+1010+Wien&amp;destination=City+Airport+Train+Wien+Mitte&amp;travelmode=walking" target="_blank" rel="noopener">Gångväg</a></div></div></article>
+      <article class="item"><div class="num">3</div><div><div class="item-top"><span class="time">08.53–12.15</span><span class="tag">Flyg</span></div><h3>Vienna Airport · Austrian OS965</h3><p>Flygplatsens separata avgångsråd anger tre timmar med incheckat bagage och två timmar med enbart handbagage. CAT-planen når terminalområdet 3 timmar och 22 minuter före avgång. Handbagageresenärer kan som lugnare morgonalternativ ta CAT 09.37 och vara framme 09.53. Kontrollera terminal, gate och eventuella trafikändringar samma morgon.</p><div class="facts"><span>VIE → ARN</span><span>avgång 12.15</span><span>primär ankomst 08.53</span></div><div class="links"><a class="primary" href="https://viennaairport.com/en/passengers/arrival__departure/tips_for_departure" target="_blank" rel="noopener">Flygplatsens råd</a><a href="https://www.austrian.com/at/en/check-in" target="_blank" rel="noopener">Austrian check-in</a></div></div></article>
+      <article class="item"><div class="num">B</div><div><div class="item-top"><span class="time">Reserv</span><span class="tag">Taxi</span></div><h3>Taxi direkt till terminalen</h3><p>Om det regnar, bagaget är tungt eller CAT störs: beställ taxi från Graben 17 och ange Vienna Airport som destination. Be receptionen kontrollera trafikläget och rekommenderad avresetid; taxitid och pris är inte liveverifierade här.</p><div class="links"><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Graben+17%2C+1010+Wien&amp;destination=Vienna+International+Airport&amp;travelmode=driving" target="_blank" rel="noopener">Bilväg</a><a href="https://www.viennaairport.com/en/passengers/arrival__parking/taxis__limousines" target="_blank" rel="noopener">Flygplatsens taxiinfo</a></div></div></article>
+    </div>
+  </section>
+
+  </section>
+
+  <section class="view-panel" id="vin" role="tabpanel" aria-labelledby="view-vin-tab">
     <div class="day-head"><div class="eyebrow">Vinprovningar · jämförelse</div><h2>Välj efter språk, miljö och chans</h2><p>Fuhrgassl-Huber är fortfarande bästa helhetsvalet för två personer som vill ut i vinbergen, men engelska anges inte på den officiella sidan. Be därför om ett uttryckligt språkbesked innan ni betraktar bokningen som klar.</p></div>
     <div class="callout"><strong>Är Fuhrgassl-Huber på engelska?</strong><p><strong>Inte verifierat.</strong> Sidan och formuläret är på tyska och anger inget tourspråk. Skriv: “We would like to request Weinverkostung Plus for two people on Wednesday 12 August 2026 at 11:00. Can the vineyard and cellar tour, as well as the tasting, be conducted in English? Please confirm availability and the total price of €72.”</p><div class="links"><a class="primary" href="mailto:weingut@fuhrgassl-huber.at?subject=English%20Weinverkostung%20Plus%20request%20for%2012%20August&amp;body=Hello%2C%0A%0AWe%20would%20like%20to%20request%20Weinverkostung%20Plus%20for%20two%20people%20on%20Wednesday%2012%20August%202026%20at%2011%3A00.%20Can%20the%20vineyard%20and%20cellar%20tour%2C%20as%20well%20as%20the%20tasting%2C%20be%20conducted%20in%20English%3F%20Please%20confirm%20availability%20and%20the%20total%20price%20of%20%E2%82%AC72.%0A%0AThank%20you.">Skicka engelsk fråga</a></div></div>
     <div class="schedule">
@@ -91,20 +108,10 @@
     </div>
   </section>
 
-  <section class="day" id="tor" role="tabpanel" aria-labelledby="tab-tor">
-    <div class="day-head"><div class="eyebrow">Torsdag 13 augusti · avresa</div><h2>Graben → VIE → Stockholm</h2><p>Flyget OS965 avgår 12.15. Den konservativa planen nedan ger drygt tre timmar på flygplatsen och fungerar även med incheckat bagage.</p></div>
-    <div class="schedule">
-      <article class="item"><div class="num">1</div><div><div class="item-top"><span class="time">07.15–08.05</span><span class="tag">Lugnt</span></div><h3>Frukost och utcheckning</h3><p>Checka in online hos Austrian när det öppnar och ha boardingkort samt ID lättåtkomliga. Med incheckat bagage: lämna hotellet omkring 08.05. Med enbart handbagage kan ni välja den senare CAT-avgången 09.37.</p></div></article>
-      <article class="item feature"><div class="num">2</div><div><div class="item-top"><span class="time">08.05–08.53</span><span class="tag">Primär plan</span></div><h3>Gå till Wien Mitte · CAT 08.37</h3><p>Gå från Graben 17 till City Air Terminal i Wien Mitte med promenadmarginal. CAT avgår 08.37 och går nonstop på 16 minuter, med planerad ankomst 08.53. En enkelbiljett kostar €14,90 enligt flygplatsen.</p><p>Austrian-resenärer kan normalt använda City Check-in; bagage måste vara inlämnat senast 75 minuter före avgång. För maximal enkelhet går det också bra att ta väskorna på tåget och lämna dem på flygplatsen.</p><div class="links"><a class="primary" href="https://www.cityairporttrain.com/en/Info-Service/Timetable" target="_blank" rel="noopener">CAT tidtabell</a><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Graben+17%2C+1010+Wien&amp;destination=City+Airport+Train+Wien+Mitte&amp;travelmode=walking" target="_blank" rel="noopener">Gångväg</a></div></div></article>
-      <article class="item"><div class="num">3</div><div><div class="item-top"><span class="time">08.53–12.15</span><span class="tag">Flyg</span></div><h3>Vienna Airport · Austrian OS965</h3><p>Flygplatsens separata avgångsråd anger tre timmar med incheckat bagage och två timmar med enbart handbagage. CAT-planen når terminalområdet 3 timmar och 22 minuter före avgång. Handbagageresenärer kan som lugnare morgonalternativ ta CAT 09.37 och vara framme 09.53. Kontrollera terminal, gate och eventuella trafikändringar samma morgon.</p><div class="facts"><span>VIE → ARN</span><span>avgång 12.15</span><span>primär ankomst 08.53</span></div><div class="links"><a class="primary" href="https://viennaairport.com/en/passengers/arrival__departure/tips_for_departure" target="_blank" rel="noopener">Flygplatsens råd</a><a href="https://www.austrian.com/at/en/check-in" target="_blank" rel="noopener">Austrian check-in</a></div></div></article>
-      <article class="item"><div class="num">B</div><div><div class="item-top"><span class="time">Reserv</span><span class="tag">Taxi</span></div><h3>Taxi direkt till terminalen</h3><p>Om det regnar, bagaget är tungt eller CAT störs: beställ taxi från Graben 17 och ange Vienna Airport som destination. Be receptionen kontrollera trafikläget och rekommenderad avresetid; taxitid och pris är inte liveverifierade här.</p><div class="links"><a href="https://www.google.com/maps/dir/?api=1&amp;origin=Graben+17%2C+1010+Wien&amp;destination=Vienna+International+Airport&amp;travelmode=driving" target="_blank" rel="noopener">Bilväg</a><a href="https://www.viennaairport.com/en/passengers/arrival__parking/taxis__limousines" target="_blank" rel="noopener">Flygplatsens taxiinfo</a></div></div></article>
-    </div>
-  </section>
-
   <section class="section" aria-labelledby="book-title">
     <div class="section-head"><div><div class="eyebrow">Gör före avresa</div><h2 id="book-title">Bokningsordning</h2></div><p>Liveinventering har inte kontrollerats. Öppna de officiella flödena nu.</p></div>
     <div class="practical-grid">
-      <article class="card"><span class="icon">🍇</span><h3>1. Fuhrgassl-Huber</h3><p>Skicka onsdagsförfrågan om ”Weinverkostung plus” för två kl. 11.00, be om engelska och fråga samtidigt om bord från 14.00. Följ upp tisdag under kontorstid.</p><div class="links"><a class="primary" href="#vin" data-open-day="vin">Jämför vinval</a></div></article>
+      <article class="card"><span class="icon">🍇</span><h3>1. Fuhrgassl-Huber</h3><p>Skicka onsdagsförfrågan om ”Weinverkostung plus” för två kl. 11.00, be om engelska och fråga samtidigt om bord från 14.00. Följ upp tisdag under kontorstid.</p><div class="links"><a class="primary" href="#vin" data-open-view="vin">Jämför vinval</a></div></article>
       <article class="card"><span class="icon">🏰</span><h3>2. Schönbrunn</h3><p>Välj tid nära 08.30 på tisdag. Officiella sidan varnar för slutsålda korttidsbesök.</p><div class="links"><a href="https://www.schoenbrunn.at/en/tickets-and-prices/all-tickets-tours" target="_blank" rel="noopener">Biljetter</a></div></article>
       <article class="card"><span class="icon">👑</span><h3>3. Sisi Museum</h3><p>Välj tisdag omkring 15.00 och håll sista insläpp 16.30 i minnet.</p><div class="links"><a href="https://www.sisimuseum-hofburg.at/en/tickets/tickets-prices" target="_blank" rel="noopener">Biljetter</a></div></article>
       <article class="card"><span class="icon">🖼️</span><h3>4. Upper Belvedere</h3><p>Välj onsdag omkring 17.00 efter vinbesöket. Tidslucka krävs, men besökets längd är inte begränsad.</p><div class="links"><a href="https://www.belvedere.at/en/tickets" target="_blank" rel="noopener">Biljetter</a></div></article>
@@ -143,35 +150,71 @@
   <p class="footer">Wienguiden · 10–13 augusti 2026 · byggd för mobilen · <a href="https://github.com/ponbac/wien-guide/blob/main/PHOTO_CREDITS.md" target="_blank" rel="noopener">foto- och licensinformation</a></p>
 </main>
 <script>
-  const buttons=[...document.querySelectorAll('[data-day]')];
+  const viewButtons=[...document.querySelectorAll('[data-view]')];
+  const views=[...document.querySelectorAll('.view-panel')];
+  const dayButtons=[...document.querySelectorAll('[data-day]')];
   const days=[...document.querySelectorAll('.day')];
+
+  function selectButtons(buttons,key,value){
+    buttons.forEach(button=>{
+      const active=button.dataset[key]===value;
+      button.classList.toggle('active',active);
+      button.setAttribute('aria-selected',active);
+      button.tabIndex=active?0:-1;
+    });
+  }
+
+  function showView(id,scroll=false,updateHash=true){
+    selectButtons(viewButtons,'view',id);
+    views.forEach(view=>view.classList.toggle('active',view.id===id));
+    if(updateHash){
+      const activeDay=dayButtons.find(button=>button.getAttribute('aria-selected')==='true')?.dataset.day||'man';
+      history.replaceState(null,'','#'+(id==='schema'?activeDay:id));
+    }
+    if(scroll) document.querySelector('.section-tabs').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
   function showDay(id,scroll=false){
-    buttons.forEach(button=>{const active=button.dataset.day===id;button.classList.toggle('active',active);button.setAttribute('aria-selected',active);button.tabIndex=active?0:-1});
+    showView('schema',false,false);
+    selectButtons(dayButtons,'day',id);
     days.forEach(day=>day.classList.toggle('active',day.id===id));
     history.replaceState(null,'','#'+id);
     if(scroll) document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'});
   }
-  buttons.forEach((button,index)=>{
-    button.addEventListener('click',()=>showDay(button.dataset.day,true));
-    button.addEventListener('keydown',event=>{
-      let next=index;
-      if(event.key==='ArrowRight') next=(index+1)%buttons.length;
-      else if(event.key==='ArrowLeft') next=(index-1+buttons.length)%buttons.length;
-      else if(event.key==='Home') next=0;
-      else if(event.key==='End') next=buttons.length-1;
-      else return;
-      event.preventDefault();
-      showDay(buttons[next].dataset.day);
-      buttons[next].focus();
+
+  function wireTabs(buttons,activate){
+    buttons.forEach((button,index)=>{
+      button.addEventListener('click',()=>activate(button));
+      button.addEventListener('keydown',event=>{
+        let next=index;
+        if(event.key==='ArrowRight') next=(index+1)%buttons.length;
+        else if(event.key==='ArrowLeft') next=(index-1+buttons.length)%buttons.length;
+        else if(event.key==='Home') next=0;
+        else if(event.key==='End') next=buttons.length-1;
+        else return;
+        event.preventDefault();
+        activate(buttons[next],false);
+        buttons[next].focus();
+      });
     });
-  });
-  document.querySelectorAll('[data-open-day]').forEach(link=>link.addEventListener('click',event=>{
+  }
+
+  wireTabs(viewButtons,(button,scroll=true)=>showView(button.dataset.view,scroll));
+  wireTabs(dayButtons,(button,scroll=true)=>showDay(button.dataset.day,scroll));
+
+  document.querySelectorAll('[data-open-view]').forEach(link=>link.addEventListener('click',event=>{
     event.preventDefault();
-    showDay(link.dataset.openDay,true);
-    document.querySelector(`[data-day="${link.dataset.openDay}"]`).focus();
+    showView(link.dataset.openView,true);
+    document.querySelector(`[data-view="${link.dataset.openView}"]`).focus();
   }));
-  const requested=location.hash.slice(1);
-  if(days.some(day=>day.id===requested)) showDay(requested);
+
+  function routeHash(){
+    const requested=location.hash.slice(1);
+    if(days.some(day=>day.id===requested)) showDay(requested,false);
+    else if(views.some(view=>view.id===requested)) showView(requested,false,false);
+  }
+  window.addEventListener('hashchange',routeHash);
+  routeHash();
 </script>
 </body>
 </html>
